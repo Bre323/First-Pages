@@ -1,53 +1,93 @@
 html {
-    font-family: 'Rubik', sans-serif;
-  }
-  
-  header {
-    margin: 35px;
-    text-align: center;
-    line-height: 20px;
-  }
-  
-  .container {
-    background-color: rgb(240, 240, 240);
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-  }
-  
-  #survey-form {
-    font-size: 14pt;
-  }
-  
-  .form-divs, .form-opt {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
-  
-  .form-divs p, label{
-    margin-bottom: 15px;
-  }
-  
-  .control-form {
-    margin: 0px 15px 0px 15px;
-    width: 250px;
-    height: 15px;
-  }
-  
-  .form-opt > input {
-    margin-top: 20px;
+  font-family: Arial;
+  margin: 35px;
+}
+
+header {
+  text-align: center;
+  line-height: 30px;
+}
+
+.container {
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.form-divs, .form-opt, .bt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-divs {
+  margin-bottom: 25px;
+}
+
+.form-divs > input {
+  margin-top: 5px;
+  margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.form-opt {
+  margin-top: 50px;
+  align-items: center;
+}
+
+.form-opt > p {
+  margin-top: 40px;
+}
+
+.form-opt > input {
+  margin-top: 20px;
+}
+
+.form-opt > label {
+  padding-bottom: 10px;
+}
+
+#dropdown {
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+
+
+textarea {
+  padding: 10px 40px 10px 5px;
+  min-width: 200px;
+  max-width: 250px;
+  min-height: 100px;
+  max-height: 200px;
+  border-radius: 5px;
+}
+
+.bt {
+  margin: 20px;
+  padding: 30px;
+}
+
+#submit {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media(max-width: 445px) {
+  html, input, select {
+    font-size: 12px;
   }
   
   textarea {
-    padding: 100px;
-  }
-  
-  .bt {
-    margin: 40px;
-    padding: 20px 100px 20px 100px;
-  }
-  
-  #submit {
-    padding: 10px;
-  }
+  padding: 10px 5px 10px 5px;
+  min-width: 200px;
+  max-width: 210px;
+  min-height: 100px;
+  max-height: 150px;
+}
+}
