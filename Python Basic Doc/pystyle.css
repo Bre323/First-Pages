@@ -1,82 +1,84 @@
 #navbar {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    border-right: 2px solid;
-    border-color: rgba(0, 0, 0, 0.3);
-    min-width: 180px;
-    width: 250px;
-    height: 100%;
-  }
-  
-  #navbar > header {
-    margin: 10px;
-    padding-bottom: 5px;
-    font-size: 18px;
-    font-weight: 600;
-  }
-  
-  #navbar > ul > li{
-    margin-top: calc(100%/7);
-    padding-bottom: 10px;
-    list-style-type: none;
-    border-bottom: solid;
-    border-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    color: black;
-  }
-  
-  @media (max-width: 700px) {
-    #navbar {
-      width: 180px;
-    }
-    
-    #navbar > ul > li {
-      margin: 10px;
-      margin-bottom: calc(100%/7);
-    }
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  border-right: 2px solid;
+  border-color: rgba(0, 0, 0, 0.3);
+  min-width: 180px;
+  width: 250px;
+  height: 100%;
+}
+
+#navbar header {
+  margin: 10px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#navbar ul li{
+  margin-top: calc(100%/7);
+  padding-bottom: 10px;
+  list-style-type: none;
+  border-bottom: solid;
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+#main-doc {
+  position: absolute;
+  padding: 10px;
+  margin-left: 280px;
+}
+
+.main-section{
+  margin: 5px 0 50px 0;
+}
+
+.main-section header {
+  padding-bottom: 10px;
+  font-size: 16pt;
+  font-weight: 600;
+}
+
+#Other_functions {
+  margin-top: 50px;
+}
+
+#Other_functions ul li{
+  margin-top: 10px;
+  list-style-type: square;
+}
+
+code {
+  padding-left: 20px;
+}
+
+#hworld {
+  height: 25px;
+  background-color: #ddd;
+}
+
+#var {
+  height: 40px;
+  background-color: #ddd;
+}
+
+#mystr {
+  height: 80px;
+  background-color: #ddd;
+}
+
+@media (max-width: 550px) {
+  #navbar {
+    display: none;
   }
   
   #main-doc {
-    position: absolute;
-    padding: 10px;
-    margin-left: 280px;
-    margin-bottom: 90px;
+    margin: 20px;
   }
-  
-  .main-section{
-    margin: 15px 0 40px 0;
-  }
-  
-  header {
-    padding-bottom: 10px;
-    font-size: 16pt;
-    font-weight: 600;
-  }
-  
-  #Other_functions {
-    margin-top: 50px;
-  }
-  
-  #Other_functions > ul > li{
-    margin-top: 10px;
-    list-style-type: square;
-  }
-  
-  #hworld {
-    height: 30px;
-    background-color: #ddd;
-  }
-  
-  #var {
-    height: 40px;
-    background-color: #ddd;
-  }
-  
-  #mystr {
-    height: 80px;
-    background-color: #ddd;
-  }
+}
